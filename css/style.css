@@ -6,13 +6,8 @@
 }
 
 body {
-  color: #333;
-  line-height: 1.6;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
+  color: #222;
+  line-height: 1.7;
 }
 
 /* NAVBAR */
@@ -42,36 +37,37 @@ a {
 .nav-menu {
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 30px;
 }
 
 .nav-menu a {
   color: #fff;
   font-size: 0.95rem;
+  text-decoration: none;
 }
 
 /* HERO */
 .hero {
   min-height: 100vh;
+  background: linear-gradient(135deg, #0d6efd, #111);
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #0d6efd, #111);
-  color: #fff;
   text-align: center;
-  padding: 120px 20px 60px;
+  padding: 120px 20px;
+  color: #fff;
 }
 
-.hero-title {
+.hero h1 {
   font-size: 3rem;
   font-weight: 700;
 }
 
-.gradient-text {
+.hero h1 span {
   color: #ffc107;
 }
 
-.hero-subtitle {
+.hero p {
   max-width: 700px;
   margin: 20px auto;
   opacity: 0.9;
@@ -79,33 +75,40 @@ a {
 
 /* BUTTONS */
 .btn {
-  display: inline-block;
-  padding: 12px 25px;
+  padding: 12px 26px;
   border-radius: 8px;
   margin: 10px;
+  display: inline-block;
   font-weight: 500;
+  text-decoration: none;
 }
 
-.btn-primary {
+.primary {
   background: #0d6efd;
   color: #fff;
 }
 
-.btn-secondary {
+.secondary {
   border: 1px solid #fff;
   color: #fff;
 }
 
 /* SECTIONS */
 .section {
-  padding: 80px 20px;
+  padding: 90px 20px;
 }
 
-.bg-light {
+.section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.light {
   background: #f8f9fa;
 }
 
-.bg-dark {
+.dark {
   background: #111;
   color: #fff;
 }
@@ -115,36 +118,30 @@ a {
   margin: auto;
 }
 
-.section-title {
-  text-align: center;
-  margin-bottom: 40px;
-  font-size: 2rem;
-}
-
 /* SKILLS */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
 }
 
-.skill-box {
+.skill-card {
   background: #fff;
-  padding: 25px;
-  border-radius: 10px;
+  padding: 30px;
+  border-radius: 12px;
 }
 
 /* PORTFOLIO */
-.work-grid {
+.portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 25px;
 }
 
-.work-item {
-  padding: 25px;
-  border-radius: 10px;
+.portfolio-item {
   background: #f8f9fa;
+  padding: 30px;
+  border-radius: 12px;
 }
 
 /* CONTACT */
@@ -156,7 +153,7 @@ a {
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 12px;
+  padding: 14px;
   margin-bottom: 15px;
   border-radius: 8px;
   border: none;
@@ -164,14 +161,14 @@ a {
 
 .contact-info {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 /* FOOTER */
-.footer {
-  text-align: center;
-  padding: 15px;
+footer {
   background: #000;
   color: #fff;
+  text-align: center;
+  padding: 15px;
   font-size: 0.9rem;
 }

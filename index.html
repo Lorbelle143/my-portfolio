@@ -3,133 +3,157 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lorbelle Ganzan | Portfolio</title>
+  <title>Lorbelle Ganzan | Web Design Portfolio</title>
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="#home">Lorbelle Ganzan</a>
-    <button class="navbar-toggler" type="button" id="menu-toggle">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="nav-menu">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="logo">LG</div>
+    <ul class="nav-menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#work">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger">
+      <span></span><span></span><span></span>
     </div>
   </div>
 </nav>
 
-<!-- Hero -->
-<header id="home" class="hero text-white text-center">
-  <div class="container">
-    <h1>Hello, I'm <span>Lorbelle Ganzan</span></h1>
-    <p>Web Design Student | Strategic Thinker</p>
-  </div>
-</header>
-
-<!-- About -->
-<section id="about" class="section container">
-  <h2>About Me</h2>
-  <p>
-    I am a web design student who prefers a quiet and focused working environment.
-    As an introvert, I enjoy tasks that require deep concentration, problem-solving,
-    and thoughtful planning. I have a strong interest in chess, which has helped me
-    develop strategic thinking, patience, and attention to detail—qualities that I
-    apply when designing and building websites.
-  </p>
-</section>
-
-<!-- Projects -->
-<section id="projects" class="section bg-light">
-  <div class="container">
-    <h2>Projects</h2>
-    <div class="row g-4">
-
-      <div class="col-md-4">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5 class="card-title">Personal Portfolio Website</h5>
-            <p class="card-text">
-              A professional portfolio website created using HTML, CSS, JavaScript,
-              and Bootstrap as part of my Web Design Comprehensive Examination.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5 class="card-title">Responsive Layout Design</h5>
-            <p class="card-text">
-              A responsive layout project focused on mobile-first design,
-              proper spacing, and visual hierarchy using CSS and Bootstrap grid system.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5 class="card-title">JavaScript Interaction</h5>
-            <p class="card-text">
-              A simple interactive feature using JavaScript for form validation
-              and improved user experience.
-            </p>
-          </div>
-        </div>
-      </div>
-
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h1 class="hero-title">
+      Lorbelle Ganzan<br>
+      <span class="gradient-text">Web Design Student</span>
+    </h1>
+    <p class="hero-subtitle">
+      An introverted web design student who enjoys strategic thinking, problem-solving,
+      and creating clean, responsive websites using HTML, CSS, and JavaScript.
+    </p>
+    <div class="hero-buttons">
+      <a href="#work" class="btn btn-primary">View My Work</a>
+      <a href="#contact" class="btn btn-secondary">Contact Me</a>
     </div>
   </div>
 </section>
 
-<!-- Skills -->
-<section id="skills" class="section container">
-  <h2>Skills & Talents</h2>
-  <ul>
-    <li>HTML5 – Semantic and structured web markup</li>
-    <li>CSS3 – Responsive layouts and clean visual design</li>
-    <li>JavaScript – Basic interactivity and logic handling</li>
-    <li>Bootstrap 5 – Mobile-first UI framework</li>
-    <li>Strategic Thinking – Developed through chess and planning</li>
-    <li>Problem Solving – Logical and analytical approach to challenges</li>
-    <li>Focus & Patience – Strengthened through chess and independent work</li>
-  </ul>
-</section>
-
-<!-- Contact -->
-<section id="contact" class="section contact-section">
+<!-- ABOUT -->
+<section id="about" class="section">
   <div class="container">
-    <h2>Contact Me</h2>
-    <form id="contactForm">
-      <input type="text" id="name" class="form-control mb-3" placeholder="Your Name">
-      <input type="email" id="email" class="form-control mb-3" placeholder="Your Email">
-      <button type="submit" class="btn btn-primary">Send Message</button>
-      <p id="formMessage" class="mt-3"></p>
-    </form>
+    <h2 class="section-title">About Me</h2>
+    <p>
+      I am a web design student from the Philippines who prefers a quiet and focused
+      working environment. As an introvert, I enjoy tasks that require deep concentration
+      and logical thinking.
+    </p>
+    <p>
+      I have a strong interest in chess, which has helped me develop strategic thinking,
+      patience, and attention to detail—skills that I apply when planning layouts,
+      structuring code, and solving design problems.
+    </p>
   </div>
 </section>
 
-<!-- Footer -->
-<footer>
+<!-- SKILLS -->
+<section id="skills" class="section bg-light">
+  <div class="container">
+    <h2 class="section-title">Skills & Talents</h2>
+
+    <div class="skills-grid">
+      <div class="skill-box">
+        <h3><i class="fas fa-code"></i> Web Development</h3>
+        <ul>
+          <li>HTML5 – Semantic structure</li>
+          <li>CSS3 – Responsive layouts</li>
+          <li>JavaScript – Basic interactivity</li>
+        </ul>
+      </div>
+
+      <div class="skill-box">
+        <h3><i class="fas fa-chess"></i> Personal Strengths</h3>
+        <ul>
+          <li>Strategic Thinking (Chess)</li>
+          <li>Problem Solving</li>
+          <li>Focus & Patience</li>
+          <li>Attention to Detail</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="work" class="section">
+  <div class="container">
+    <h2 class="section-title">Portfolio</h2>
+
+    <div class="work-grid">
+      <div class="work-item">
+        <h3>Personal Portfolio Website</h3>
+        <p>
+          A responsive portfolio website created using HTML, CSS, and JavaScript
+          as part of my Web Design Comprehensive Examination.
+        </p>
+      </div>
+
+      <div class="work-item">
+        <h3>Responsive Layout Practice</h3>
+        <p>
+          A layout-focused project that demonstrates proper spacing, typography,
+          and mobile-first design principles.
+        </p>
+      </div>
+
+      <div class="work-item">
+        <h3>JavaScript Interaction</h3>
+        <p>
+          A simple interactive form with client-side validation to improve user experience.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section bg-dark">
+  <div class="container">
+    <h2 class="section-title text-white">Contact Me</h2>
+    <p class="contact-subtitle">
+      Feel free to reach out for academic projects or collaboration.
+    </p>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <p><i class="fas fa-envelope"></i> lorbelleganzan@gmail.com</p>
+      <p><i class="fas fa-phone"></i> +63 936 801 2296</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
   © 2026 Lorbelle Ganzan | Web Design Portfolio
 </footer>
 
-<!-- JavaScript -->
-<script src="js/main.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

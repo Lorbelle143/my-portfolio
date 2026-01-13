@@ -1,99 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Lorbelle Ganzan | Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lorbelle Ganzan | Portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Icons -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<!-- NAVBAR -->
-<header class="navbar">
-    <div class="container nav-flex">
-        <div class="brand">Lorbelle Ganzan</div>
-        <nav>
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-        </nav>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#home">Lorbelle Ganzan</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav-menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
     </div>
+  </div>
+</nav>
+
+<!-- Hero / About -->
+<header id="home" class="hero text-white text-center">
+  <div class="container">
+    <img src="https://scontent.fcgy2-3.fna.fbcdn.net/v/t39.30808-1/613158222_2094660221291207_3825569718745456209_n.jpg?stp=c0.0.535.535a_dst-jpg_s200x200_tt6&_nc_cat=105&ccb=1-7&_nc_sid=1d2534&_nc_ohc=3gb-D5_IxvcQ7kNvwFHiOaY&_nc_oc=Adk6kPbarXMNg1dkCwAKSCe712zT-Y1jEhQ82W4inm4p2LSw0xwPZHzdfLyFy7a7tl4&_nc_zt=24&_nc_ht=scontent.fcgy2-3.fna&_nc_gid=rgQa9BjZtmN_qIp0irJhZg&oh=00_AfoChK3o-19LTIQCG9eWWle1cHtkDidUmx2xT8ik8WaNKQ&oe=696BB997" alt="Lorbelle Ganzan" class="profile-pic mb-3">
+    <h1> I'm <span>Lorbelle Ganzan</span></h1>
+    <p> Web Design and chess enthusiast</p>
+  </div>
 </header>
 
-<!-- HERO -->
-<section id="home" class="hero">
-    <div class="container hero-content">
-
-        <div class="avatar">
-            <span>Your Photo Here</span>
-        </div>
-
-        <h1>Hello, I’m <span>Lorbelle Ganzan</span></h1>
-        <p class="subtitle">Student / Web Developer</p>
-
-        <a href="#skills" class="btn">View My Skills</a>
-
-    </div>
+<!-- About -->
+<section id="about" class="section container">
+  <h2>About Me</h2>
+  <p>
+    I am a web design student that willing to learn and passionate about building clean, responsive, and user-friendly also logical thinking and stratefical thinking.
+  </p>
 </section>
 
-<!-- ABOUT -->
-<section id="about" class="section">
-    <div class="container narrow">
-        <h2 class="section-title">About Me</h2>
-        <p class="section-text">
-            Hello! I'm Lorbelle Ganzan, a passionate student and aspiring web developer.
-            I enjoy building clean, responsive websites and continuously improving my
-            skills .
-        </p>
-    </div>
+<!-- Skills -->
+<section id="skills" class="section container">
+  <h2>Skills</h2>
+  <ul class="skills-list">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>chess</li>
+    <li>logical thinking</li>
+  </ul>
 </section>
 
-<!-- SKILLS -->
-<section id="skills" class="section section-muted">
-    <div class="container">
-        <h2 class="section-title">My Skills</h2>
+<!-- Contact -->
+<section id="contact" class="section container contact-section">
+  <h2>Contact Me</h2>
+  <form id="contactForm">
+    <input type="text" id="name" class="form-control mb-3" placeholder="lorbelleganzan" required>
+    <input type="email" id="email" class="form-control mb-3" placeholder="lorbelleganzan@gmail.com" required>
+    <textarea id="phone" class="form-control mb-3" placeholder="09366012296" rows="4" required></textarea>
 
-        <div class="skills-grid">
-            <div class="skill-card">
-                <i class="fab fa-html5"></i>
-                <h3>HTML5</h3>
-                <p>Semantic & accessible markup</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="fab fa-css3-alt"></i>
-                <h3>CSS3</h3>
-                <p>Responsive layouts & UI design</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="fab fa-js"></i>
-                <h3>JavaScript</h3>
-                <p>Dynamic and interactive features</p>
-            </div>
-        </div>
-    </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="section">
-    <div class="container narrow">
-        <h2 class="section-title">Contact Me</h2>
-        <p>Email: lorbelleganzan@gmail.com</p>
-        <p>Phone: +63 9368012296</p>
-    </div>
-</section>
-
-<footer class="footer">
-    © 2026 Lorbelle Ganzan
+<!-- Footer -->
+<footer class="text-center py-3">
+  © 2026 Lorbelle Ganzan | Web Design Portfolio
 </footer>
 
-<script src="script.js"></script>
+<!-- JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

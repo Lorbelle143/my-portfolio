@@ -6,12 +6,12 @@ toggleBtn.addEventListener("click", () => {
   navMenu.classList.toggle("show");
 });
 
-// Smooth scroll
-document.querySelectorAll('.nav-link').forEach(link => {
-  link.addEventListener('click', e => {
+// Smooth scrolling
+document.querySelectorAll(".nav-link").forEach(link => {
+  link.addEventListener("click", e => {
     e.preventDefault();
-    document.querySelector(link.getAttribute('href'))
-      .scrollIntoView({ behavior: 'smooth' });
+    document.querySelector(link.getAttribute("href"))
+      .scrollIntoView({ behavior: "smooth" });
   });
 });
 

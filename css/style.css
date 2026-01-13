@@ -102,27 +102,46 @@ body {
   box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
-/* Contact */
+/* Contact - UPDATED to match Skills style */
 .contact-section {
-  background-color: #212529;
-  color: white;
+  background-color: #f8f9fa; /* same as Skills */
+  color: #333; /* dark text */
+  padding: 80px 0;
 }
 
 .contact-section form {
   max-width: 500px;
   margin: auto;
+  background: white; /* card style like Skills */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
 .contact-section input,
 .contact-section textarea {
   border-radius: 8px;
-  padding: 10px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  width: 100%;
+  margin-bottom: 15px;
+  font-size: 1rem;
 }
 
 .contact-section button {
   width: 100%;
   border-radius: 8px;
   font-weight: 600;
+  background-color: #0d6efd; /* same as skill underline color */
+  border: none;
+  color: white;
+  padding: 12px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.contact-section button:hover {
+  background-color: #0b5ed7;
+  transform: translateY(-3px);
 }
 
 /* Footer */
